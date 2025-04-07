@@ -1,0 +1,283 @@
+/* about.css - Eldho Sabu, C0956054 */
+
+body {
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', 'Helvetica', sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #e6f0fa;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+header img {
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    border-radius: 5px;
+}
+
+nav {
+    background-color: #2c3e50;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #34495e;
+    border-radius: 5px;
+    text-align: center;
+}
+
+nav img {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 15px;
+    padding: 5px 10px;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+/* Pseudo-classes for navigation links */
+nav a:hover {
+    color: #3498db;
+    background-color: #34495e;
+    border-radius: 5px;
+}
+
+nav a:active {
+    color: #2980b9;
+    background-color: #2c3e50;
+}
+
+nav a:visited {
+    color: #bdc3c7; 
+}
+
+main {
+    background-color: #ffffff;
+    margin: 0 0 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
+    color: #2980b9;
+}
+
+h2 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+main p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+ol {
+    text-align: left;
+    margin: 0 auto;
+    max-width: 600px;
+    padding-left: 20px;
+}
+
+ol li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+footer {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #e6f0fa;
+    border-radius: 5px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+
+
+/* Mobile Viewport (up to 600px) */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+
+    header {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    header img {
+        max-width: 100%;
+    }
+
+    nav {
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav img {
+        width: 60px;
+        height: 60px;
+        margin-bottom: 10px;
+    }
+
+    nav a {
+        font-size: 14px;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    main p {
+        font-size: 16px;
+    }
+
+    ol li {
+        font-size: 14px;
+    }
+}
+
+/* Tablet Viewport (601px to 1024px) */
+@media screen and (min-width: 630px)  {
+    .container {
+        width: 85%;
+    }
+
+    header {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    nav {
+        padding: 12px;
+    }
+
+    nav a {
+        font-size: 15px;
+        margin: 0 10px;
+    }
+
+    main {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    main p {
+        font-size: 17px;
+    }
+
+    ol li {
+        font-size: 15px;
+    }
+}
+
+/* Desktop Viewport (1025px and above) */
+@media screen and (min-width: 1021px) {
+    .container {
+        width: 80%;
+    }
+
+    header {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    nav {
+        padding: 15px;
+    }
+
+    nav a {
+        font-size: 16px;
+        margin: 0 15px;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    main p {
+        font-size: 18px;
+    }
+
+    ol li {
+        font-size: 16px;
+    }
+}
+ /*Media Query for Large Desktop Viewports */
+ @media screen and (min-width: 1921px) {
+    #container { 
+        margin: 0 auto; 
+        width: 1920px;
+    }
+}
