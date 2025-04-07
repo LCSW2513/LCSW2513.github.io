@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<!-- Eldho Sabu, C0956054 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smooth Press - Media</title>
+        <link rel="icon" href="images/favicon.png" type="image/x-icon">
+   
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        
+        .media-section {
+            margin: 20px 0;
+        }
+
+        .media-box {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .media-box .title {
+            font-size: 24px; 
+            color: #2c3e50; 
+            margin-bottom: 15px;
+            cursor: pointer; 
+            transition: color 0.3s ease;
+        }
+
+        .media-box .title:hover {
+            color: #3498db; 
+        }
+
+        audio, video {
+            width: 100%;
+            max-width: 800px; 
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        
+        .video-container {
+            display: none;
+        }
+
+        
+        .video-container.visible {
+            display: block;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .product-card {
+            background: linear-gradient(135deg, #e6f0fa, #d0e1f9);
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            text-align: left;
+            position: relative;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+            border: 1px solid #2c3e50;
+            overflow: hidden;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05) translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+            background: linear-gradient(135deg, #ffffff, #e6f0fa);
+        }
+
+        .product-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(41, 128, 185, 0.1);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .product-card:hover::before {
+            opacity: 1;
+        }
+
+        .product-card h3 {
+            font-size: 20px;
+            color: #2c3e50;
+            margin-top: 0;
+            position: relative;
+            z-index: 1;
+            transition: color 0.3s ease;
+        }
+
+        .product-card:hover h3 {
+            color: #2980b9;
+        }
+
+        .product-card p {
+            font-size: 18px;
+            color: #34495e;
+            margin: 5px 0;
+            position: relative;
+            z-index: 1;
+        }
+
+        .product-card p strong {
+            color: #2c3e50;
+        }
+
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/banner.png" alt="Smooth Press Appliances Banner" width="1200" height="150">
+        </header>
+
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" alt="Smooth Press Logo" width="80" height="80"></a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Our Team</a>
+            <a href="specials.html">Specials</a>
+            <a href="training.html">Training</a>
+            <a href="media.html">Media</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <main>
+            <h1>Smooth Press - Press Better, Look Sharper!</h1>
+
+            <!-- Media Section -->
+            <div class="media-section">
+                <div class="media-box">
+                    <div class="title">Hear the Steam</div>
+                    <audio controls>
+                        <source src="media/audio.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <p>Experience the soothing sound of our steam technology in action.</p>
+                </div>
+
+                <div class="media-box">
+                    <div class="title" id="video-toggle" onclick="seeMagic()">See Smooth Press's Magic</div>
+
+                    <div class="video-container" id="video-content">
+                        <video controls>
+                            <source src="media/SmoothPress_ The Ultimate Wrinkle Remove.mp4" video/mp4">
+                            Your browser does not support the video element.
+                        </video>
+                        <p>Watch how Smooth Press transforms wrinkled fabrics effortlessly.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Products Showcase -->
+             <div ><h3 style="color: #060606;font-weight: 600;">Our best products</h3></div>
+            <div class="products-grid">
+                <div class="product-card">
+                    <h3>Steam Press Basic</h3>
+                    <p><strong>Product ID:</strong> 50123012</p>
+                    <p><strong>Series:</strong> Steam Press</p>
+                    <p><strong>Type:</strong> Steam</p>
+                    <p><strong>Interface:</strong> Analog Control</p>
+                    <p><strong>Price:</strong> $49.99</p>
+                    <p>Entry-level steam iron perfect for everyday use.</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>Smart Press Compact</h3>
+                    <p><strong>Product ID:</strong> 50124567</p>
+                    <p><strong>Series:</strong> Smart Press</p>
+                    <p><strong>Type:</strong> Smart</p>
+                    <p><strong>Interface:</strong> Digital Display</p>
+                    <p><strong>Price:</strong> $49.99</p>
+                    <p>Lightweight and travel-friendly iron for on-the-go ironing.</p>
+                </div>
+
+                <div class="product-card">
+                    <h3>Steam Press Ultra</h3>
+                    <p><strong>Product ID:</strong> 50127654</p>
+                    <p><strong>Series:</strong> Steam Press</p>
+                    <p><strong>Type:</strong> Steam</p>
+                    <p><strong>Interface:</strong> Touch Control</p>
+                    <p><strong>Price:</strong> $129.99</p>
+                    <p>Professional-grade iron with auto-temperature adjustment.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>© Copyright 2099. All Rights Reserved.</p>
+            <p><a href="mailto:info@smoothpress.com">Request information</a></p>
+            <p>Eldho Sabu C0956054</p>
+        </footer>
+    </div>
+
+    <script src="scripts/scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- Eldho Sabu, C0956054 -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us - Smooth Press Appliances</title>
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/banner.png" alt="Smooth Press Appliances Banner" width="1200" height="150">
+        </header>
+
+        <nav>
+            <a href="index.html"><img src="images/logo.jpg" alt="Smooth Press Logo" width="80" height="80"></a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="team.html">Our Team</a>
+            <a href="specials.html">Specials</a>
+            <a href="training.html">Training</a>
+            <a href="media.html">Media</a>
+            <a href="faqs.html">FAQs</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <main>
+            <h1>Contact Us</h1>
+            <p>If you have any questions or would like more information, please fill out the form below.</p>
+
+            <form action="submit_form.php" method="POST" class="contact-form">
+                <h2>Contact Form</h2>
+                <ol>
+                    <li>
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                    </li>
+                    <li>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </li>
+                    <li>
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" placeholder="Your message" required></textarea>
+                    </li>
+                    <li>
+                        <fieldset>
+                            <legend>Preferred Contact Method:</legend>
+                            <label for="phone">
+                                <input type="radio" id="phone" name="contact_method" value="phone" required> Phone
+                            </label>
+                            <label for="email_method">
+                                <input type="radio" id="email_method" name="contact_method" value="email" required> Email
+                            </label>
+                        </fieldset>
+                    </li>
+                    <li>
+                        <label for="newsletter">Subscribe to Newsletter:</label>
+                        <input type="checkbox" id="newsletter" name="newsletter" value="yes">
+                    </li>
+                    <li>
+                        <label for="preferred_date">Preferred Date for Contact:</label>
+                        <input type="date" id="preferred_date" name="preferred_date">
+                    </li>
+                    <li>
+                        <label for="feedback">How did you hear about us?</label>
+                        <select id="feedback" name="feedback">
+                            <option value="friend">Friend</option>
+                            <option value="web">Web Search</option>
+                            <option value="ad">Advertisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </li>                  
+                </ol>
+                <button type="submit">Submit Request</button>
+                        <button type="reset">Reset Form</button>
+            </form>
+        </main>
+
+        <footer>
+            <p>© Copyright 2099. All Rights Reserved.</p>
+            <p><a href="mailto:info@smoothpress.com">Request information</a></p>
+            <p>Eldho Sabu C0956054</p>
+        </footer>
+    </div>
+</body>
+</html>
